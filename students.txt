@@ -1,0 +1,2 @@
+Name:Ali Hamad, Age: 18, Address: Saudi Arabia,Riyadh,Al-Aqiq, Student ID: 12345, Course: Computer Science
+Name:Tahani Mohammed, Age: 18, Address: Saudi Arabia,Riyadh,Al-Narjis, Student ID: 125678, Course: Biology
