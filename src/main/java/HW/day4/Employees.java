@@ -6,7 +6,7 @@ import java.sql.SQLException;
 public class Employees {
 
     private int employeesId;
-    private String farstName;
+    private String firstName;
     private String lastName;
     private String email;
     private String phoneNumber;
@@ -14,18 +14,18 @@ public class Employees {
     private double salary;
 
   public  Employees (ResultSet rs) throws SQLException {
-      employeesId = rs.getInt("employees_id");
-      farstName = rs.getString("farst_Name");
-      lastName = rs.getString("last_Name");
+      employeesId = rs.getInt("employee_id");
+      firstName = rs.getString("first_name");
+      lastName = rs.getString("last_name");
       email = rs.getString("email");
-      phoneNumber = rs.getString("Phone_number");
-      hireDate = rs.getString("Hire_date");
-      salary = rs.getDouble("Salary");
+      phoneNumber = rs.getString("phone_number");
+      hireDate = rs.getString("hire_date");
+      salary = rs.getDouble("salary");
   }
 
-    public Employees(int employeesId, String farstName, String lastName, String email, String phoneNumber, String hireDate, double salary) {
+    public Employees(int employeesId, String firstName, String lastName, String email, String phoneNumber, String hireDate, double salary) {
         this.employeesId = employeesId;
-        this.farstName = farstName;
+        this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.phoneNumber = phoneNumber;
@@ -41,12 +41,12 @@ public class Employees {
         this.employeesId = employeesId;
     }
 
-    public String getFarstName() {
-        return farstName;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFarstName(String farstName) {
-        this.farstName = farstName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {
@@ -93,7 +93,7 @@ public class Employees {
     public String toString() {
         return "Employees{" +
                 "employeesId=" + employeesId +
-                ", farstName='" + farstName + '\'' +
+                ", farstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
