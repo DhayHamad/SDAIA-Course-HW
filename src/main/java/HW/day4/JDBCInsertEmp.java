@@ -10,11 +10,11 @@ public class JDBCInsertEmp {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String URL = "jdbc:sqlite:C:\\Users\\dev\\IdeaProjects\\SDAIA-Course-HW\\src\\main\\java\\HW\\day4\\hr.db";
-        String query = "insert into employee values (?, ?, ?, ?, ?, ?, ?)";
+        String url = "jdbc:sqlite:C:\\Users\\dev\\IdeaProjects\\SDAIA-Course-HW\\src\\main\\java\\HW\\day4\\hr.db";
+        String query = "insert into employees values (?, ?, ?, ?, ?, ?,null, ?,null,null)";
 
 
-        try (Connection conn = DriverManager.getConnection(URL)) {
+        try (Connection conn = DriverManager.getConnection(url)) {
             conn.setAutoCommit(false);
             PreparedStatement st = conn.prepareStatement(query);
 
@@ -49,7 +49,7 @@ public class JDBCInsertEmp {
 
                 System.out.println("Enter Salary: ");
                 int salary = sc.nextInt();
-                st.setInt(7, salary);
+                st.setInt(8, salary);
 
                 st.addBatch();
 

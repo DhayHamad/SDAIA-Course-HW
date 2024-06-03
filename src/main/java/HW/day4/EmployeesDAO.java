@@ -7,7 +7,7 @@ public class EmployeesDAO {
     private static final String URL = "jdbc:sqlite:C:\\Users\\dev\\IdeaProjects\\SDAIA-Course-HW\\src\\main\\java\\HW\\day4\\hr.db";
     private static final String SELECT_ALL_EMPLOYEES = "select * from employees";
     private static final String SELECT_ONE_EMPLOYEES = "select * from employees where employees_id = ?";
-    private static final String INSERT_EMPLOYEES = "insert into employees values (?, ?, ?, ?, ?, ?, ?)";
+    private static final String INSERT_EMPLOYEES = "insert into employees values (?, ?, ?, ?, ?, ?,null, ?,null,null)";
     private static final String UPDATE_EMPLOYEES= "update employees set farst_Name = ?, last_Name = ? ,email = ? ,Phone_number = ? ,Hire_date = ? ,Salary = ? where job_id = ?";
     private static final String DELETE_EMPLOYEES = "delete from employees where employees_id = ?";
 
