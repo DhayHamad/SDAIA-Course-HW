@@ -49,7 +49,7 @@ public class JDBCInsertEmp {
 
                 System.out.println("Enter Salary: ");
                 int salary = sc.nextInt();
-                st.setInt(8, salary);
+                st.setInt(7, salary);
 
                 st.addBatch();
 
